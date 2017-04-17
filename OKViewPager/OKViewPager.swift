@@ -160,12 +160,7 @@ extension OKViewPager: UIScrollViewDelegate {
 
 
 extension Array where Element: NSObject {
-    /// Given elements of an array, the elements on both ends are connected with
-    /// each other (circularl), pick any three consecutive elements with a given
-    /// middle element.
-    /// If there are less than three elements in the array, copy existing one(s)
-    /// to generate what we want.
-    /// If empty, return nil.
+
     func formThreeCircularlyConsecutiveElements(middle: Element) -> [Element]? {
         
         func consLastElement() -> Array? {
